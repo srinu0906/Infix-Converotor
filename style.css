@@ -1,0 +1,113 @@
+body
+{
+    font-family: sans-serif;
+    background-color: whitesmoke;
+}
+main
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+#container
+{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px;
+    margin: 50px;
+    padding: 10px;
+    width: 500px; 
+}
+
+#heading
+{
+    color: rgb(0, 183, 255);
+    font-size: 20px;
+}
+
+#form
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    font-size: 21px;
+    align-items: baseline;
+
+}
+
+#button
+{
+    margin-top:50px ;
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+    transition: transform 0.2s ease-out;
+}
+
+#button:active
+{
+    transform: scale(0.9);
+}
+
+select
+{
+    font-weight: 100px;
+    border-radius: 5px;
+    height: 25px;
+    border: 2px solid black;
+    margin-left: 5px;
+    background-color: whitesmoke;
+}
+.text-field
+{
+    font-weight: 100px;
+    border-radius: 5px;
+    border: 2px solid black;
+    height: 25px;
+    background-color: whitesmoke;
+}
+select:hover , .text-field:hover, #button:hover
+{
+    border: 2px solid blue;
+    box-shadow: 0 5px 5px rgb(0, 183, 255);
+}
+
+.box
+{
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;
+    position: static;
+}
+#box2, #box4
+{
+    float: right;
+}
+#box1, #box3
+{
+    float :left;
+}
+#box1, #box4
+{
+    animation: zoom-rotate 30s ease-in-out 0s infinite alternate none;
+}
+#box2, #box3
+{
+
+    animation: zoom-rotate 30s ease-in-out 0s infinite alternate-reverse none;
+}
+
+@keyframes zoom-rotate {
+    from{transform: scale(5);}
+    to{
+        transform: scale(2);
+        rotate:90deg;
+    }
+}

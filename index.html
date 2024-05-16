@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infix Convertor</title>
+    <link rel="stylesheet" href="style.css" >
+    
+</head>
+<body>
+    
+    <header>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    </header>
+    
+    <main>
+        <div id="container">
+            <div id="heading">
+                <h1>Infix Convertor</h1> 
+            </div>
+        
+                <form id="form">
+                    <label class="label"> Select input type : </label>
+                    <select name="input" id="input" >
+                        <option value="infix">Infix</option>
+                        <option value="postfix">Postfix</option>
+                        <option value="prefix">Prefix</option>
+                    </select>
+                    <input type="text" id="input-field" placeholder="Enter here" pattren="/[A-Za-z]/" title="Enter valid characters " class="text-field">
+                    <label class="label">Select output type: </label>
+                    <select name="output" id="output">
+                        <option value="infix">Infix</option>
+                        <option value="postfix">Postfix</option>
+                        <option value="prefix">Prefix</option>
+                    </select>
+                    <input type="text" id="output-field" class="text-field" >
+                </form>
+            
+            <button id="button" onclick="main()"><strong>Get Result</strong></button><br><br>
+        </div>
+    </main>
+
+    <footer>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </footer>
+        <script>
+            document.getElementById("output-field").disabled = true;
+        </script>
+        <script src="main.js"></script>
+</body>
+</html>
