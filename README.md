@@ -1,18 +1,67 @@
-# Infix-Converotor
-This web application allows users to input infix expressions and convert them to postfix or prefix notation and vice versa.
-# Features
-The following conversions are possible in this web application:
-1. Infix to Postfix
-2. Infix to Prefix
-3. Postfix to Infix 
-4. Postfix to Prefix
-5. Prefix to Infix 
-6. Prefix to Postfix
-# Usage
-1. Select the input expression type (infix / postfix / prefix).
-2. Input your expression in the designated field.
-3. Select the desired conversion type (infix / postfix / prefix).
-4. Click the "Get Result" button.
-The converted expression will be displayed.
-# Drawbacks
-The output infix expression obtained from given postfix or prefix notations does not contains parentheses.
+# Infix Expression Converter
+
+A web-based application that converts mathematical expressions between different notations: infix, postfix (Reverse Polish Notation), and prefix (Polish Notation).
+
+## Live Demo
+
+You can try the application live at: [https://srinu0906.github.io/Infix-Converotor/](https://srinu0906.github.io/Infix-Converotor/)
+
+## Features
+
+The application supports the following conversions:
+- Infix to Postfix
+- Infix to Prefix
+- Postfix to Infix
+- Postfix to Prefix
+- Prefix to Infix
+- Prefix to Postfix
+
+## Usage
+
+1. Visit the [live demo](https://srinu0906.github.io/Infix-Converotor/) or open `index.html` in your web browser
+2. Select the input expression type (infix / postfix / prefix)
+3. Enter your expression in the input field
+4. Select the desired output notation type
+5. Click the "Get Result" button to see the converted expression
+
+### Input Format
+- Use standard mathematical operators: +, -, *, /, ^
+- Use parentheses () for grouping
+- Use alphanumeric characters for operands
+- Spaces are not required but are allowed
+
+## Implementation Details
+
+The application uses a stack-based algorithm to perform the conversions:
+- For infix to postfix conversion, it uses the Shunting Yard algorithm
+- For prefix/postfix conversions, it uses appropriate stack operations
+- The implementation handles operator precedence and associativity
+
+## Limitations
+
+1. The output infix expression obtained from postfix or prefix notation does not include parentheses
+2. The application does not support special characters or symbols
+3. Input validation is basic and may not catch all invalid expressions
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+
+## Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/srinu0906/Infix-Converotor.git
+```
+
+2. Open `index.html` in your web browser
+
+## Contributing
+
+Feel free to submit issues and enhancement requests!
+
+## License
+
+This project is open source and available under the MIT License.
