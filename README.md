@@ -47,7 +47,7 @@ The application uses a stack-based algorithm to perform the conversions:
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
+- JavaScript 
 
 ## Getting Started
 
